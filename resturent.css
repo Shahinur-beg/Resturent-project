@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    /* font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Satisfy', cursive; */
+}
+.row{
+    width: 100%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+ }
+  
+ [class*="col-"] {
+    float: left;
+    padding: 15px;
+ }
+
+ /* header css start */
+header{
+     background-color: #24a19c;
+     text-align: center;
+     padding: 0% 2%;
+}
+.logo img{
+   height: 130px;
+   width: 150px;
+   line-height: 70px;
+   padding: 20px;
+   border: 2px solid white;
+   border-radius: 100%;
+}
+.nav-bar ul li{
+    list-style: none;
+    font-size: 20px;
+    line-height: 70px;
+    border-radius: 20px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.nav-bar ul li:hover{
+    background-color:rgb(71, 67, 67);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 1s;
+}
+ /* header css start */
+
+ /* banner section start */
+.banner-section{
+    background-image: url('images/J&S-resturent.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.banner_content{
+    padding: 50px 10px;
+    margin: auto;
+    text-align: center;
+    height: 500px;
+}
+.banner_content h1{
+   background-color: chartreuse;
+   padding: 10px;
+   font-size: 50px;
+   width: 250px;
+   margin: auto;
+   border-radius: 10px;
+   font-family: 'Lobster Two', cursive;
+   margin-bottom: 20px;
+   margin-top: 30px;
+}
+.banner_content p{
+   padding: 10px;
+   font-size: 25px;
+   background-color: green;
+   color: white;
+   width: 250px;
+   margin: auto;
+   border-radius: 10px;
+}
+.banner_content button{
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.banner_content button:hover{
+   background-color: darkblue;
+   transform: scale(1.1);
+   cursor: pointer;
+}
+ /* banner section end */
+
+ /* about us css start */
+ #about-us{
+  text-align: center;
+  padding: 10px;
+ }
+ .about-content h2{
+    font-size: 30px;
+    padding: 10px;
+ }
+ .about-content p{
+   font-size: 25px;
+   margin: 5px;
+   font-family: 'Satisfy', cursive;
+ }
+ /* about us css end */
+
+ /* food menu start */
+ #food-menu{
+   background-color: #24a19c;
+   font-size: 40px;
+   text-align: center;
+   font-family: 'Lobster Two', cursive;
+   padding: 10px;
+
+ }
+ .food-menu-sec{
+   padding: 1%;
+ }
+ .menu-img{
+    text-align: center;
+ }
+ .menu-img img{
+   width: 100%;
+   height: 380px;
+   display: block;
+ }
+ .menu-desc{
+     text-align: center;
+     background-color: grey;
+ }
+ .menu-itm{
+    background-color: green;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+ }
+ .menu-desc p{
+    line-height: 25px;
+    font-size: 20px;
+ }
+ .menu-card:hover{
+   transform: scale(1.05);
+   transition: 1s;
+   cursor: pointer;
+ }
+ /* food menu end */
+
+ /* contact us css start */
+#contact-us{
+ background-color: rgb(43, 138, 138);
+}
+.map{
+ width: 100%;
+ height: 300px;
+}
+.contact-item{
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.contact-item h2,h3,h4{
+  margin-top: 10px;
+}
+ /* contact us css end */
+
+ /* footer css start */
+ footer{
+   background-color: black;
+   color: white;
+   text-align: center;
+   
+ }
+.footer-icon{
+  padding: 10px;
+  margin-top: 10px;
+}
+.footer-icon button{
+  font-size: 40px;
+  margin: 0px 20px;
+  color: blue;
+  padding: 10px;
+  border: none;
+  border-radius: 100%;
+}
+.footer-item{
+  font-family: 'Satisfy', cursive;
+}
+.footer-item .owner{
+  font-size: 20px;
+}
+.footer-icon button:hover{
+  background-color: rgb(19, 15, 15);
+  cursor: pointer;
+  transform: scale(1.5);
+  background-color: transparent;
+}
+
+/* footer css end */
+
+/* For small mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 576px) {
+    /* For mobile phone: */
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 700px) {
+    /* For medium devise: */
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+  }
+
+  @media only screen and (min-width: 992px) {
+      /* For desktop: */
+      .logo{
+        /* text-align: left; */
+        margin: 0px;
+        padding: 10px;
+      }
+     .logo img{
+       width: 100px;
+       height: 80px;
+       padding: 10px;
+       float: left;
+     }
+     .nav-bar ul{
+       text-align: right;
+     }
+     .nav-bar ul li{
+       display: inline-block;
+     }
+     .nav-bar ul li{
+       display: inline-block;
+       padding: 0% 2%;
+     }
+     .nav-bar ul li:hover{
+        transform: scale(1.05);
+     }
+     .banner_content h1{
+       width:340px;
+       padding: 20px;
+       font-size: 50px;
+       margin-top: 80px;
+     }
+
+      .contact-item h2{
+        margin-top: 30px;
+        font-size: 30px;
+      }
+      .contact-item h2,h3,h4{
+        line-height: 30px;
+      }
+      .contact-item .bottom-p{
+        margin-bottom: 20px;
+      }
+      .contact-item{
+        margin-top: 30px;
+        border-radius: 80%;
+        border: 2px solid white;
+      }
+      .footer-item .devloper{
+        text-align: right;
+        margin-bottom: 0px;
+      }
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+  }
